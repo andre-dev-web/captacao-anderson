@@ -7,7 +7,7 @@ export default function Form() {
     const formEle = document.getElementById("formData") as HTMLFormElement;
     const formDatab = new FormData(formEle);
     fetch(
-      "https://script.google.com/macros/s/AKfycbxUX4hu2QEQ7r9TwrSo9vAHydDXv4VwtEDUacCifXaEecIH2bWHQSnFWtd9NdNIUVGDdQ/exec",
+      "https://script.google.com/macros/s/AKfycbzBHRSif62Air1_HLx6Iy9F71NwjbP7zBmfr2eQej5aV_hLTItWab3EJSpAWaG_Cdcc/exec",
       {
         method: "POST",
         body: formDatab
