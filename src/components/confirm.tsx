@@ -13,7 +13,7 @@ export default function Confirm() {
   });
   
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-white body-font">
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
         <Image 
             className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" 
@@ -23,7 +23,7 @@ export default function Confirm() {
             height={800}
           />
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Este foi o primeiro passo para mudar sua vida</h1>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Este foi o primeiro passo para mudar sua vida</h1>
           <p className="mb-8 leading-relaxed">
             Você já esta inscrito nas aulas grátuitas, você sera redirecionado para o grupo onde diremos as datas das aulas, então entre e fique atento para não perder nenhuma.
           </p>
