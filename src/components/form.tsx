@@ -1,6 +1,6 @@
 "use client"
 import Image from 'next/image'
-import { useState } from 'react';
+import { useRouter } from 'next/router'
 
 export default function Form() {
   function Submit(e:any) {
@@ -20,6 +20,8 @@ export default function Form() {
       .catch((error) => {
         console.log(error);
       });
+      const router = useRouter()
+      router.push('/confirm')
     }
   return (
     <section className="text-white body-font">
