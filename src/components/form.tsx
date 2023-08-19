@@ -1,12 +1,36 @@
 "use client"
 import Image from 'next/image'
+import { useState } from 'react';
 
 export default function Form() {
-  async function Submit(e:any) 
-  {
+  const [nameError, setNameError] = useState(false);
+  const [emailError, setEmailError] = useState(false);
+  const [whatsappError, setWhatsappError] = useState(false);
+  
+  async function Submit(e:any) {
     e.preventDefault();
     const formEle = document.getElementById("formData") as HTMLFormElement;
     const formDatab = new FormData(formEle);
+
+    if (!formDatab.get('Nome')) {
+      setNameError(true);
+      return;
+    } else {
+      setNameError(false);
+    }
+    if (!formDatab.get('Email')) {
+      setEmailError(true);
+      return;
+    } else {
+      setEmailError(false);
+    }
+    if (!formDatab.get('Whatsapp')) {
+      setWhatsappError(true);
+      return;
+    } else {
+      setWhatsappError(false);
+    }
+
     try {
       const response = await fetch(
         'https://script.google.com/macros/s/AKfycbzBHRSif62Air1_HLx6Iy9F71NwjbP7zBmfr2eQej5aV_hLTItWab3EJSpAWaG_Cdcc/exec',
@@ -34,6 +58,7 @@ export default function Form() {
       <div className='bg-orange-400 flex md:flex-row flex-col items-center'>
         <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Faça parte dessa revolução!</h2>
       </div>
+      
       <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <Image 
@@ -57,22 +82,25 @@ export default function Form() {
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
-                <label className="leading-7 text-sm text-white">Nome</label>
-                <input placeholder="Seu nome" name="Nome" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
-              </div>
+                <label className="leading-7 text-sm text-white">Nome<span className="text-red-400">*</span></label>
+                <input required placeholder="Seu nome" name="Nome" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                {nameError && <p className="text-red-500 text-sm mt-1">Este campo é obrigatório.</p>}
+            </div>
             </div>
 
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
-                <label className="leading-7 text-sm text-white">Email</label>
-                <input placeholder="Seu email" name="Email" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <label className="leading-7 text-sm text-white">Email<span className="text-red-400">*</span></label>
+                <input required placeholder="Seu email" name="Email" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                {emailError && <p className="text-red-500 text-sm mt-1">Este campo é obrigatório.</p>}
               </div>
             </div>
             
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
-                <label className="leading-7 text-sm text-white">WhatsApp</label>
-                <input placeholder="Seu whatsapp" name="Whatsapp" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <label className="leading-7 text-sm text-white">WhatsApp<span className="text-red-400">*</span></label>
+                <input required placeholder="Seu whatsapp" name="Whatsapp" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                {whatsappError && <p className="text-red-500 text-sm mt-1">Este campo é obrigatório.</p>}
               </div>
             </div>
             <button type="submit" className="w-1/2 inline-flex justify-center text-gray bg-orange-400 border-0 my-2 py-2 focus:outline-none hover:bg-orange-500 rounded text-lg transition-color duration-300">Quero Saber a Verdade</button>
