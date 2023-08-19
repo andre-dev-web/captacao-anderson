@@ -1,28 +1,34 @@
 "use client"
 import Image from 'next/image'
-import { useRouter } from 'next/router'
 
 export default function Form() {
-  function Submit(e:any) {
+  async function Submit(e:any) 
+  {
+    e.preventDefault();
     const formEle = document.getElementById("formData") as HTMLFormElement;
     const formDatab = new FormData(formEle);
-    fetch(
-      "https://script.google.com/macros/s/AKfycbzBHRSif62Air1_HLx6Iy9F71NwjbP7zBmfr2eQej5aV_hLTItWab3EJSpAWaG_Cdcc/exec",
-      {
-        method: "POST",
-        body: formDatab
-      }
-    )
-      .then((res) => res.json())
-      .then((data) => {
+    try {
+      const response = await fetch(
+        'https://script.google.com/macros/s/AKfycbzBHRSif62Air1_HLx6Iy9F71NwjbP7zBmfr2eQej5aV_hLTItWab3EJSpAWaG_Cdcc/exec',
+        {
+          method: 'POST',
+          body: formDatab,
+        }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
         console.log(data);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-      const router = useRouter()
-      router.push('/confirm')
+
+        window.location.replace("/confirm")
+      } else {
+        console.log('Error submitting form');
+      }
+    } catch (error) {
+      console.log(error);
     }
+  }
+
   return (
     <section className="text-white body-font">
       <div className='bg-orange-400 flex md:flex-row flex-col items-center py-18'>
@@ -43,36 +49,36 @@ export default function Form() {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-            Esqueça tudo que você já viu e ouviu falar sobre renda extra com milhas. Eles mentiram pra você! 
+            Esqueça tudo que você já ouviu falar sobre renda extra com milhas. <span className='text-orange-400'>Eles mentiram pra você!</span> 
           </h1>
-          <p className="mb-8 leading-relaxed">
-            Você está prestes a descobrir a verdade nua e crua que nenhum guru de milhas jamais te contou!<br/>
-            Super aula secreta ao vivo 29/08/2023 terça-feira às 20h.<br/>
-            Se você gosta de ser enganado e fica ai dando atenção pra quem não te entrega nada, só promessas vazias e que nunca te geraram nenhum resultado de fato, esquece que essa aula não é pra você! 
-            Mas se você quer ter acesso a VERDADE, se quer realmente construir RESULTADOS através do mundo das milhas clique agora no link e tenha acesso a essa nova era.
-          </p>
-          <form id='formData' onSubmit={(e) => Submit(e)}>
+          <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Promessas vazias e conteudos incompletos, renda extra com milhas realmente é possível?! Cadastre-se agora e descubra!          
+          </h2>
+          <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
+            Você está prestes a ter acesso a verdade nua e crua que nenhum guru de milhas jamais te contou! Super aula secreta ao vivo 29/08/2023 terça-feira às 20h. 
+          </h2>
+          <form id='formData' className="w-full" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full md:justify-start justify-center items-end">
               <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
                 <label className="leading-7 text-sm text-white">Nome</label>
-                <input placeholder="Seu Nome" name="Nome" type="text" className="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-orange-200 focus:bg-transparent focus:border-orange-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <input placeholder="Seu Nome" name="Nome" type="text" className="w-full bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
 
             <div className="flex w-full md:justify-start justify-center items-end">
               <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
                 <label className="leading-7 text-sm text-white">Email</label>
-                <input placeholder="Seu Email" name="Email" type="text" className="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-orange-200 focus:bg-transparent focus:border-orange-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <input placeholder="Seu Email" name="Email" type="text" className="w-full bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
             
             <div className="flex w-full md:justify-start justify-center items-end">
               <div className="relative mr-4 lg:w-full xl:w-1/2 w-2/4">
                 <label className="leading-7 text-sm text-white">WhatsApp</label>
-                <input placeholder="Seu Whatsapp" name="Whatsapp" type="text" className="w-full bg-white bg-opacity-50 rounded border border-gray-300 focus:ring-2 focus:ring-orange-200 focus:bg-transparent focus:border-orange-400 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <input placeholder="Seu Whatsapp" name="Whatsapp" type="text" className="w-full bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
-            <button type="submit" className="inline-flex text-gray bg-orange-400 border-0 my-2 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg">Quero Saber a Verdade</button>
+            <button type="submit" className="inline-flex text-gray bg-orange-400 border-0 my-2 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg transition-all duration-300">Quero Saber a Verdade</button>
           </form>
         </div>
       </div>

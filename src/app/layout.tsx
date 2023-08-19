@@ -2,12 +2,13 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Footer from '@/components/footer'
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Felipe Milhas ',
-  description: '',
+  title: 'Felipe Milhas',
+  description: 'Instcrição no bootcamp de milhas que vai transformar sua vida',
 }
 
 export default function RootLayout({
