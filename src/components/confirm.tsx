@@ -25,8 +25,15 @@ export default function Confirm() {
         <div className="text-center lg:w-2/3 w-full">
           <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Este foi o primeiro passo para mudar sua vida</h1>
           <p className="mb-8 leading-relaxed">
-            Você já esta inscrito nas aulas grátuitas, você sera redirecionado para o grupo onde diremos as datas das aulas, então entre e fique atento para não perder nenhuma.
+            Você acaba de garantir sua cadeira no maior e mais importante evento sobre milhas entre no grupo e receba informações exclusivas para ficar por dentro dessa revolução
           </p>
+          
+          <div className="pt-2">
+            <div className='progress-container'>
+              <div className='progress-bar'></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

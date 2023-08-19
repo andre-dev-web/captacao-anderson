@@ -7,3 +7,21 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.progress-container {
+  @apply w-full bg-gray-200 rounded-full h-4;
+}
+
+.progress-bar {
+  @apply bg-orange-400 h-4 rounded-full;
+  animation: progressAnimation 9s linear forwards;
+}
+
+@keyframes progressAnimation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}

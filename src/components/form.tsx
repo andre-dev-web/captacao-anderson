@@ -32,7 +32,7 @@ export default function Form() {
   return (
     <section className="text-white body-font">
       <div className='bg-orange-400 flex md:flex-row flex-col items-center'>
-        <h2 className="mx-auto py-1 text-xl sm:text-4xl font-medium text-white">Faça parte dessa revolução!</h2>
+        <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Faça parte dessa revolução!</h2>
       </div>
       <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -44,38 +44,38 @@ export default function Form() {
             height={1200}
           />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-          <h1 className="text-lg sm:text-4xl mb-4 font-medium text-white text-center">
+        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
+          <h1 className="text-lg md:text3xl sm:text-4xl mb-4 font-medium text-white text-center">
             Esqueça tudo que você já ouviu falar sobre o mundo das milhas. <br /><span className='text-orange-400'>Eles mentiram pra você!</span> 
           </h1>
-          <h2 className="text-lg sm:text-4xl  mb-4 font-medium text-white text-center">
+          <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
             Promessas vazias e conteúdos incompletos, renda extra e viagens a custo zero com milhas realmente é possível?!          
           </h2>
-          <h2 className="text-lg sm:text-4xl  mb-4 font-medium text-white text-center">
+          <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
             Você está prestes a ter acesso a verdade. Cadastre-se agora e descubra! Super aula secreta ao vivo, dias 29/08 , 30/08 e 31/08 às 20h. 
           </h2>
-          <form id='formData' className="w-full" onSubmit={(e) => Submit(e)}>
-            <div className="flex w-full md:justify-start justify-center items-end">
-              <div className=" relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+          <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
+            <div className="flex w-full justify-center ">
+              <div className="mr-4 w-full">
                 <label className="leading-7 text-sm text-white">Nome</label>
                 <input placeholder="Seu nome" name="Nome" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
 
-            <div className="flex w-full md:justify-start justify-center items-end">
-              <div className=" relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+            <div className="flex w-full justify-center ">
+              <div className="mr-4 w-full">
                 <label className="leading-7 text-sm text-white">Email</label>
                 <input placeholder="Seu email" name="Email" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
             
-            <div className="flex w-full md:justify-start justify-center items-end">
-              <div className=" relative mr-4 lg:w-full xl:w-1/2 w-2/4">
+            <div className="flex w-full justify-center ">
+              <div className="mr-4 w-full">
                 <label className="leading-7 text-sm text-white">WhatsApp</label>
                 <input placeholder="Seu whatsapp" name="Whatsapp" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
-            <button type="submit" className="inline-flex text-gray bg-orange-400 border-0 my-2 py-2 px-6 focus:outline-none hover:bg-orange-500 rounded text-lg transition-color duration-300">Quero Saber a Verdade</button>
+            <button type="submit" className="w-1/2 inline-flex justify-center text-gray bg-orange-400 border-0 my-2 py-2 focus:outline-none hover:bg-orange-500 rounded text-lg transition-color duration-300">Quero Saber a Verdade</button>
           </form>
         </div>
       </div>
