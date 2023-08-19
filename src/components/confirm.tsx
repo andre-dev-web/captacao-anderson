@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 export default function Confirm() {
   const urlRedirecionamento = "https://chat.whatsapp.com/ClEN9Taks0E2hoEP6Uh6wF";
   useEffect(() => {
-    const delay = 10000;
+    const delay = 8000;
 
     const timeout = setTimeout(() => {
       window.location.replace(urlRedirecionamento);

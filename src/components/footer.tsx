@@ -19,7 +19,7 @@ export default function Footer() {
                 <FaYoutube/>
               </svg>
             </a>
-            <a href="" className="ml-3 text-white hover:scale-125 transition-all duration-300">
+            <a href="https://www.facebook.com/profile.php?id=100071971836165" className="ml-3 text-white hover:scale-125 transition-all duration-300">
               <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-7 h-7" viewBox="0 0 24 24">
                 <FaFacebook />
               </svg>
