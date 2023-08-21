@@ -2,7 +2,7 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Footer from '@/components/footer'
-import FacebookPixel from '@/components/pixel'
+import {FacebookPixel} from '@/components'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
