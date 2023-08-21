@@ -2,6 +2,7 @@ import '@/styles/globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Footer from '@/components/footer'
+import FacebookPixel from '@/components/pixel'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <div className="flex flex-col min-h-screen">
             <main className="flex-grow">
               {children}
+              <FacebookPixel />
             </main>
             <Footer/>
           </div>

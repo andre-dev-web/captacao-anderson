@@ -1,17 +1,9 @@
-import { FacebookPixel } from 'react-facebook-pixel';
+export const FB_PIXEL_ID = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID
 
-export const initFacebookPixel = () => {
-  const facebookPixelId = process.env.NEXT_PUBLIC_FACEBOOK_PIXEL_ID;
+export const pageview = () => {
+  window.fbq('track', 'PageView')
+}
 
-  FacebookPixel.init(facebookPixelId, {}, {
-    debug: false, // true = active debug mode
-  });
-};
-
-export const trackPageView = () => {
-  FacebookPixel.pageView();
-};
-
-export const trackEvent = (eventName, eventData) => {
-  FacebookPixel.track(eventName, eventData);
-};
+export const event = (name, options = {}) => {
+  window.fbq('track', name, options)
+}
