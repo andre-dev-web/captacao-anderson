@@ -3,10 +3,13 @@ import Image from 'next/image'
 import { useState } from 'react';
 
 export default function Form() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   async function Submit(e:any) {
     e.preventDefault();
     const formEle = document.getElementById("formData") as HTMLFormElement;
     const formDatab = new FormData(formEle);
+    
+    setIsSubmitting(true);
 
     try {
       const response = await fetch(
@@ -28,6 +31,7 @@ export default function Form() {
     } catch (error) {
       console.log(error);
     }
+    setIsSubmitting(false);
   }
 
   return (
@@ -77,7 +81,7 @@ export default function Form() {
                 <input required placeholder="Seu whatsapp" name="Whatsapp" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-orange-400 focus:border-orange-400 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
-            <button type="submit" className="w-1/2 inline-flex justify-center text-gray bg-orange-400 border-0 my-2 py-2 focus:outline-none hover:bg-orange-500 rounded text-lg transition-color duration-300">Quero Saber a Verdade</button>
+            <button type="submit" disabled={isSubmitting} className="w-1/2 inline-flex justify-center text-gray bg-orange-400 border-0 my-2 py-2 focus:outline-none hover:bg-orange-500 rounded text-lg transition-color duration-300">{isSubmitting ? 'Submitting...' : 'Quero Saber a Verdade'}</button>
           </form>
         </div>
       </div>
