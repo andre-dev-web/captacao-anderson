@@ -58,7 +58,7 @@ export default function Form() {
             Promessas vazias e conteúdos incompletos, renda extra e viagens a custo zero com milhas realmente é possível?!          
           </h2>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Você está prestes a ter acesso a verdade. Cadastre-se agora e descubra! Super aula secreta ao vivo, dias 29/08 , 30/08 e 31/08 às 20h. 
+            Você pode ter perdido as Super aulas ao vivo, dias 29/08, 30/08 e 31/08. Mas não desanime, entre para lista de espera dos meus próximos eventos.  
           </h2>
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full justify-center ">

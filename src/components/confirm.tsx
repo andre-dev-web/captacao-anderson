@@ -26,9 +26,9 @@ export default function Confirm() {
             height={800}
           />
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Este foi o primeiro passo para mudar sua vida</h1>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Infelizmente as aulas já passaram</h1>
           <p className="mb-8 leading-relaxed">
-            Você acaba de garantir sua cadeira no maior e mais importante evento sobre milhas entre no grupo e receba informações exclusivas para ficar por dentro dessa revolução
+            Nossas aulas gratuitas acabaram, mas não se preucupe, você já esta na lista de espera das próximos eventos que vamos fazer
           </p>
           
           <div className="pt-2">
