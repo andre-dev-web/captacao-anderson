@@ -26,9 +26,9 @@ export default function Confirm() {
             height={800}
           />
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Infelizmente as aulas já passaram</h1>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Aulas ao vivo encerradas</h1>
           <p className="mb-8 leading-relaxed">
-            Nossas aulas gratuitas acabaram, mas não se preucupe, você já esta na lista de espera das próximos eventos que vamos fazer
+            Entre no nosso grupo para ter acesso as aulas gravadas, materias de apoio e conteúdos exclusivos.
           </p>
           
           <div className="pt-2">
