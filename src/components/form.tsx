@@ -52,7 +52,7 @@ export default function Form() {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
           <h1 className="text-lg md:text3xl sm:text-4xl mb-4 font-medium text-white text-center">
-            Os conteúdos das aulas ao vivo foram <br /><span className='text-orange-400'>transformadores!</span> 
+            Os conteúdos das aulas ao vivo foram <span className='text-orange-400'>transformadores!</span> 
           </h1>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
             Além de todo conteúdo entregamos também alguns materiais com tarefas exclusivas   
