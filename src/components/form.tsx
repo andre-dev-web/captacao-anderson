@@ -37,7 +37,7 @@ export default function Form() {
   return (
     <section className="text-white body-font">
       <div className='bg-orange-400 flex md:flex-row flex-col items-center'>
-        <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Faça parte dessa revolução!</h2>
+        <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Aulas ao vivo encerradas!</h2>
       </div>
       
       <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
@@ -52,13 +52,13 @@ export default function Form() {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
           <h1 className="text-lg md:text3xl sm:text-4xl mb-4 font-medium text-white text-center">
-            Esqueça tudo que você já ouviu falar sobre o mundo das milhas. <br /><span className='text-orange-400'>Eles mentiram pra você!</span> 
+            Os conteúdos das aulas ao vivo foram <br /><span className='text-orange-400'>transformadores!</span> 
           </h1>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Promessas vazias e conteúdos incompletos, renda extra e viagens a custo zero com milhas realmente é possível?!          
+            Além de todo conteúdo entregamos também alguns materiais com tarefas exclusivas   
           </h2>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Você pode ter perdido as Super aulas ao vivo, dias 29/08, 30/08 e 31/08. Mas não desanime, entre para lista de espera dos meus próximos eventos.  
+            Se você quer ter acesso a tudo isso entre agora para o nosso grupo e fique por dentro de nossos proximos eventos e conteúdos!          
           </h2>
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full justify-center ">
