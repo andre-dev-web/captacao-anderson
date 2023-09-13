@@ -36,7 +36,7 @@ export default function Form() {
 
   return (
     <section className="text-white body-font">
-      <div className='bg-orange-400 flex md:flex-row flex-col items-center'>
+      <div className='bg-black flex md:flex-row flex-col items-center'>
         <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Aulas ao vivo encerradas!</h2>
       </div>
       
@@ -52,7 +52,7 @@ export default function Form() {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
           <h1 className="text-lg md:text3xl sm:text-4xl mb-4 font-medium text-white text-center">
-            Os conteúdos das aulas ao vivo foram <span className='text-orange-400'>TRANSFORMADORAS!</span> 
+            Os conteúdos das aulas ao vivo foram <span className='text-orange-400'>TRANSFORMADORES!</span> 
           </h1>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
             Além de todo conteúdo entregamos também alguns materiais com tarefas exclusivas.   

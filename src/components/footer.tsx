@@ -3,7 +3,7 @@ import { FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa';
 export default function Footer() {
   return (
     <footer>
-      <div className="bg-orange-400 pt-1 flex items-center">
+      <div className="bg-black pt-1 flex items-center">
         <div className="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
           <p className="text-white text-sm text-center sm:text-left">© Copyright —
             <a href="mailto:suporte@felipemilhas.com.br" rel="noopener noreferrer" className="hover:font-bold transition-all duration-300 underline ml-1" target="_blank">Felipe Milhas</a>

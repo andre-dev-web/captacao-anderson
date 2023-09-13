@@ -14,7 +14,7 @@ export default function Confirm() {
   
   return (
     <section className="text-white body-font">
-      <div className='bg-orange-400 flex md:flex-row flex-col items-center'>
+      <div className='bg-black flex md:flex-row flex-col items-center'>
         <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white text-center">Aguarde para ser redirecionado ao grupo no WhatsApp</h2>
       </div>
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
