@@ -13,7 +13,7 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbwITn3_e2rHUi8dfrVJ6KuVcYbmelapem2e5wLAHqEpqqWgwXC4p16TZU6xr3awa4oH/exec',
+        'https://script.google.com/macros/s/AKfycbzinVTlavLVHNBqojrld6RDbLzmZ69MEcG51JVTlvfnL7YiNWXR8WXxXy2r8mIXsXZb/exec',
         {
           method: 'POST',
           body: formDatab,
@@ -37,7 +37,7 @@ export default function Form() {
   return (
     <section className="text-white body-font">
       <div className='bg-black flex md:flex-row flex-col items-center'>
-        <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Aulas ao vivo encerradas!</h2>
+        <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Inscrições encerradas!</h2>
       </div>
       
       <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
@@ -52,13 +52,13 @@ export default function Form() {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
           <h1 className="text-lg md:text3xl sm:text-4xl mb-4 font-medium text-white text-center">
-            Os conteúdos das aulas ao vivo foram <span className='text-orange-400'>TRANSFORMADORES!</span> 
+            Os conteúdos do curso foram <span className='text-orange-400'>TRANSFORMADORES!</span> 
           </h1>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Além de todo conteúdo entregamos também alguns materiais com tarefas exclusivas.   
+            Entregamos varios materiais além da oferta arazadora.   
           </h2>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Se você quer ter acesso a tudo isso entre agora para o nosso grupo e fique por dentro de nossos próximos eventos e conteúdos!          
+            Cadastre-se para ter acesso as nossas próximas ofertas exclusicas e bônus entre para o nosso grupo seleto!          
           </h2>
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full justify-center ">
