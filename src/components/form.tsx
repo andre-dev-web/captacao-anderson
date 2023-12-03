@@ -55,10 +55,10 @@ export default function Form() {
             Os conteúdos do curso foram <span className='text-orange-400'>TRANSFORMADORES!</span> 
           </h1>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Entregamos varios materiais além da oferta arazadora.   
+            Entregamos vários materiais além da oferta arrasadora.   
           </h2>
           <h2 className="text-lg md:text3xl sm:text-4xl  mb-4 font-medium text-white text-center">
-            Cadastre-se para ter acesso as nossas próximas ofertas exclusicas e bônus entre para o nosso grupo seleto!          
+            Cadastre-se para ter acesso as nossas próximas ofertas e bônus exclusivos. Entre para o nosso grupo seleto!          
           </h2>
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full justify-center ">
