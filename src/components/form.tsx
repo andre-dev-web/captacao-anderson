@@ -52,10 +52,10 @@ export default function Form() {
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
           <h1 className="text-2xl mb-4 font-medium text-white text-center">
-            Nos dias 09/01 10/01 e 11/01 as 20h você tem um encontro marcado comigo.
+            Nos dias 09/01, 10/01 e 11/01 às 20h você tem um encontro marcado comigo.
           </h1>
           <h2 className="text-2xl mb-4 font-medium text-white text-center">
-            Serão 3 aulas gratuitas onde eu mesmo vou traçar junto com você um <span className="text-orange-400">caminho prático</span> para a realização do seu sonho e tenho certeza que <span className="text-orange-400">2024 vai ser o inicio de uma nova vida</span> para você e sua familia!
+            Serão 3 aulas gratuitas onde eu mesmo vou traçar junto com você um <span className="text-orange-400">caminho prático</span> para a realização do seu sonho e tenho certeza que <span className="text-orange-400">2024 vai ser o início de uma nova vida</span> para você e sua família!
           </h2>
           <h2 className="text-2xl mb-4 font-medium text-white text-center">
             Topa entrar nessa jornada comigo? Preencha os dados abaixo e garanta agora sua vaga em nosso grupo seleto!          
