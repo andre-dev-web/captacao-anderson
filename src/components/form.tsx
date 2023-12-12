@@ -37,7 +37,7 @@ export default function Form() {
   return (
     <section className="text-white body-font">
       <div className='bg-black flex md:flex-row flex-col items-center'>
-        <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white">Desafio além das Milhas!</h2>
+        <h2 className="mx-auto py-1 my-4 text-xl md:text3xl sm:text-4xl font-medium text-white">Desafio além das Milhas!</h2>
       </div>
       
       <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
@@ -51,13 +51,13 @@ export default function Form() {
           />
         </div>
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
-          <h1 className="text-3xl mb-4 font-medium text-white text-center">
+          <h1 className="text-2xl mb-4 font-medium text-white text-center">
             Nos dias 09/01 10/01 e 11/01 as 20h você tem um encontro marcado comigo.
           </h1>
-          <h2 className="text-3xl mb-4 font-medium text-white text-center">
+          <h2 className="text-2xl mb-4 font-medium text-white text-center">
             Serão 3 aulas gratuitas onde eu mesmo vou traçar junto com você um <span className="text-orange-400">caminho prático</span> para a realização do seu sonho e tenho certeza que <span className="text-orange-400">2024 vai ser o inicio de uma nova vida</span> para você e sua familia!
           </h2>
-          <h2 className="text-3xl  mb-4 font-medium text-white text-center">
+          <h2 className="text-2xl mb-4 font-medium text-white text-center">
             Topa entrar nessa jornada comigo? Preencha os dados abaixo e garanta agora sua vaga em nosso grupo seleto!          
           </h2>
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>

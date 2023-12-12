@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <div className="bg-black pt-1 flex items-center">
         <div className="container mx-auto py-2 px-5 flex flex-wrap flex-col sm:flex-row">
-          <p className="text-white text-sm text-center sm:text-left">© Copyright —
+          <p className="pb-2 text-white text-sm text-center sm:text-left">© Copyright —
             <a href="mailto:suporte@felipemilhas.com.br" rel="noopener noreferrer" className="hover:font-bold transition-all duration-300 underline ml-1" target="_blank">Felipe Milhas</a>
           </p>
           <span className="inline-flex sm:ml-auto justify-center sm:justify-start">
