@@ -26,9 +26,9 @@ export default function Confirm() {
             height={800}
           />
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Inscrições encerradas</h1>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Desafio Além das Milhas</h1>
           <p className="mb-8 leading-relaxed">
-            Entre no nosso grupo para ter acesso aos meus próximos cursos e materias de apoio e conteúdos exclusivos.
+            Prepare-se para ter acesso a uma nova vida! Experiências que antes pareciam impossíveis vão se tornar reais.
           </p>
           
           <div className="pt-2">
