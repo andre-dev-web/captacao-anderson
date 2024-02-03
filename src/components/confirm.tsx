@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useEffect } from 'react';
 
 export default function Confirm() {
-  const urlRedirecionamento = "https://chat.whatsapp.com/ClEN9Taks0E2hoEP6Uh6wF";
+  const urlRedirecionamento = "https://chat.whatsapp.com/C9L9hP5SX9n4sjO9Y5oDnv";
   useEffect(() => {
     const delay = 5000;
 
