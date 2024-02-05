@@ -18,15 +18,8 @@ export default function Confirm() {
         <h2 className="mx-auto py-1 text-xl md:text3xl sm:text-4xl font-medium text-white text-center">Aguarde para ser redirecionado ao grupo no WhatsApp</h2>
       </div>
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <Image 
-            className="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" 
-            alt="hero" 
-            src="/logo.png"
-            width={400}
-            height={800}
-          />
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Desafio Além das Milhas</h1>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Dias de Clamor Pela Vida Financeira</h1>
           <p className="mb-8 leading-relaxed">
             Prepare-se para ter acesso a uma nova vida! Experiências que antes pareciam impossíveis vão se tornar reais.
           </p>
