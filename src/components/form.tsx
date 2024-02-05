@@ -13,7 +13,7 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbzuYieZQSTIr1VMk9dov5PrZX_DJN6SnLVwjlup6FuUPzBaZdFrVy4E8lPEp4UsKOmZ/exec',
+        'https://script.google.com/macros/s/AKfycbxlXUxiarWlHOOprTM2s0QJnaOYSWZDmsTEaXh6ovUyJ4x_N-qs7rqnmluLhJ3W3Ob3/exec',
         {
           method: 'POST',
           body: formDatab,
