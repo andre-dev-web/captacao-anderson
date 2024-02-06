@@ -41,15 +41,7 @@ export default function Form() {
       </div>
       
       <div className="container mx-auto flex px-5 py-16 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
-          <Image 
-            className="object-cover object-center rounded" 
-            alt="hero" 
-            src="/cta.png"
-            width={800}
-            height={1200}
-          />
-        </div>
+        
         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start items-center">
           <h1 className="text-2xl mb-4 font-medium text-white text-center">
             Paz em meio às tempestades. Diante desses desafios, a <span className="text-pink-400">Palavra de Deus</span> nos oferece orientações valiosas sobre como <span className="text-pink-400">enfrentar as adversidades financeiras.</span> Em nosso grupo você recebe doses diárias de conhecimento sobre como enfrentar tudo isso, além de materiais exclusivos e eventos fechados.
