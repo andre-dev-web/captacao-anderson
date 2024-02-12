@@ -19,9 +19,9 @@ export default function Confirm() {
       </div>
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
         <div className="text-center lg:w-2/3 w-full">
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Dias de Clamor Pela Vida Financeira</h1>
+          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Avaliação agendada!</h1>
           <p className="mb-8 leading-relaxed">
-            Prepare-se para ter acesso a uma nova vida! Experiências que antes pareciam impossíveis vão se tornar reais.
+            Tenha seu sorriso transformado de forma saudável. Envie seus dados e aguarde o agendamento.
           </p>
           
           <div className="pt-2">

@@ -6,8 +6,8 @@ import Footer from '@/components/footer'
 const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Bianca Duarte | Evento',
-  description: 'Instcrição no bootcamp de finaças que vai transformar sua vida',
+  title: 'Anderson Viana | Agendamento',
+  description: 'Página de agendamentos para os procedimentos da clinica',
 }
 
 export default function RootLayout({
