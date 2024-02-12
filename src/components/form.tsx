@@ -5,7 +5,7 @@ export default function Form() {
   const handleProcedimentoChange = (event: any) => {
     setProcedimentoSelecionado(event.target.value);
   };
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   async function Submit(e:any) {
     e.preventDefault();
@@ -16,7 +16,7 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbw9m_WD1eGGOElIcheLOmaxFpp3wDQa08Y1OzYsiMOKCiEN-q9VeaT4eG3dOKMxnDHN/exec',
+        'https://script.google.com/macros/s/AKfycbwdiZ0ibj-2Z49xSruaRqbmB7d9UN_f0Y67DLFdwBcBck7-1WTUCUmExlkChdWW7s4W/exec',
         {
           method: 'POST',
           body: formDatab,
