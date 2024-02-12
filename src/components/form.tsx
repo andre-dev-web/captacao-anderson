@@ -1,6 +1,5 @@
 "use client"
 import { useState } from 'react';
-import Select from '@/components/select';
 
 export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -64,7 +63,7 @@ export default function Form() {
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
                 <label className="leading-7 text-md text-white">Procedimento<span className="text-red-400">*</span></label><br/>
-                <Select/>
+                <input required placeholder="Procedimento" name="Procedimento" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-indigo-900 focus:border-indigo-900 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
             <button type="submit" disabled={isSubmitting} className="w-1/2 inline-flex justify-center text-gray bg-indigo-900 border-0 my-2 py-2 focus:outline-none hover:bg-indigo-950 rounded transition-color duration-300">{isSubmitting ? 'Enviando...' : 'Quero agendar a avaliação'}</button>
