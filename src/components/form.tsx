@@ -1,5 +1,11 @@
 "use client"
 import { useState } from 'react';
+function Select() {
+  const [procedimentoSelecionado, setProcedimentoSelecionado] = useState('');
+
+  const handleProcedimentoChange = (event: any) => {
+    setProcedimentoSelecionado(event.target.value);
+  };
 
 export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -63,24 +69,21 @@ export default function Form() {
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
                 <label className="leading-7 text-md text-white">Procedimento<span className="text-red-400">*</span></label><br/>
-                
-                <input type="radio" name="procedimento" value="Implante"/>
-                <label htmlFor="Implante className='ml-1'">Implante</label>
-
-                <input type="radio" name="procedimento" value="Carga imediata" className='ml-2'/>
-                <label htmlFor="Cargaimediata" className='ml-1'>Carga imediata</label>
-
-                <input type="radio" name="procedimento" value="Faceta" className='ml-2'/>
-                <label htmlFor="Faceta" className='ml-1'>Faceta</label>
-
-                <input type="radio" name="procedimento" value="Bichectomia" className='ml-2'/>
-                <label htmlFor="Bichectomia" className='ml-1'>Bichectomia</label>
-                
-                <input type="radio" name="procedimento" value="Clareamento" className='ml-2'/>
-                <label htmlFor="Clareamento" className='ml-1'>Clareamento</label>
-
-                <input type="radio" name="procedimento" value="Prótese" className='ml-2'/>
-                <label htmlFor="Protese" className='ml-1'>Prótese</label>
+                <select 
+                  required 
+                  name="Procedimento" 
+                  value={procedimentoSelecionado}
+                  onChange={handleProcedimentoChange} 
+                  className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-indigo-900 focus:border-indigo-900 text-black outline-none text-base focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                >
+                  <option value="" className="text-black">Clique para selecionar</option>
+                  <option value="Implante" className="text-black">Implante</option>
+                  <option value="Carga Imediata" className="text-black">Carga imediata</option>
+                  <option value="Faceta" className="text-black">Faceta</option>
+                  <option value="Bichectomia" className="text-black">Bichectomia</option>
+                  <option value="Clareamento" className="text-black">Clareamento</option>
+                  <option value="Prótese" className="text-black">Prótese</option>
+                </select>
               </div>
             </div>
             <button type="submit" disabled={isSubmitting} className="w-1/2 inline-flex justify-center text-gray bg-indigo-900 border-0 my-2 py-2 focus:outline-none hover:bg-indigo-950 rounded transition-color duration-300">{isSubmitting ? 'Enviando...' : 'Quero agendar a avaliação'}</button>
