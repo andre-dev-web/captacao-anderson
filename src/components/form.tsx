@@ -1,13 +1,11 @@
 "use client"
 import { useState } from 'react';
-function Select() {
+export default function Form() {
   const [procedimentoSelecionado, setProcedimentoSelecionado] = useState('');
-
   const handleProcedimentoChange = (event: any) => {
     setProcedimentoSelecionado(event.target.value);
   };
-
-export default function Form() {
+  
   const [isSubmitting, setIsSubmitting] = useState(false);
   async function Submit(e:any) {
     e.preventDefault();
