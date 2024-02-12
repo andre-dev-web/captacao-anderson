@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import Select from '@/components/select';
 
 export default function Form() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -12,7 +13,7 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbyCDnCh-q98YHwuN3qoLcDxrHgPCPN8xuCySsX0zaFZ--V49_SbjXlxIJ9Ee5EQHwJp/exec',
+        'https://script.google.com/macros/s/AKfycby3VHlnAuLkb2GfVvicCeOYlzjWLWnEnjSGi9r_lJoG5m_1P7NCLQITvTTx9z-J9Fbk/exec',
         {
           method: 'POST',
           body: formDatab,
@@ -63,7 +64,7 @@ export default function Form() {
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
                 <label className="leading-7 text-md text-white">Procedimento<span className="text-red-400">*</span></label><br/>
-                <input required placeholder="Procedimento" name="Procedimento" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-indigo-900 focus:border-indigo-900 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
+                <Select/>
               </div>
             </div>
             <button type="submit" disabled={isSubmitting} className="w-1/2 inline-flex justify-center text-gray bg-indigo-900 border-0 my-2 py-2 focus:outline-none hover:bg-indigo-950 rounded transition-color duration-300">{isSubmitting ? 'Enviando...' : 'Quero agendar a avaliação'}</button>
