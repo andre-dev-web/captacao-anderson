@@ -12,7 +12,7 @@ export default function Form() {
 
     try {
       const response = await fetch(
-        'https://script.google.com/macros/s/AKfycbyhGsGBBVOwVKUd1bCv51YEH0ABDbKeo46wxZPEJR5YuZmjExqAlsFxNZl6JBTc1_HM/exec',
+        'https://script.google.com/macros/s/AKfycbw9m_WD1eGGOElIcheLOmaxFpp3wDQa08Y1OzYsiMOKCiEN-q9VeaT4eG3dOKMxnDHN/exec',
         {
           method: 'POST',
           body: formDatab,
@@ -48,28 +48,39 @@ export default function Form() {
           <form id='formData' className="w-full flex justify-center flex-col" onSubmit={(e) => Submit(e)}>
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
-                <label className="leading-7 text-sm text-white">Nome<span className="text-red-400">*</span></label>
+                <label className="leading-7 text-md text-white">Nome<span className="text-red-400">*</span></label>
                 <input required placeholder="Seu nome" name="Nome" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-indigo-900 focus:border-indigo-900 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
             </div>
             </div>
 
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
-                <label className="leading-7 text-sm text-white">Email<span className="text-red-400">*</span></label>
+                <label className="leading-7 text-md text-white">Email<span className="text-red-400">*</span></label>
                 <input required placeholder="Seu email" name="Email" type="text" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-indigo-900 focus:border-indigo-900 text-base outline-none text-black focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"/>
               </div>
             </div>
             
             <div className="flex w-full justify-center ">
               <div className="mr-4 w-full">
-                <label className="leading-7 text-sm text-white">Procedimento<span className="text-red-400">*</span></label>
-                <select required name="procedimento" id="procedimento" className="w-full bg-white focus:bg-transparent rounded border border-gray-300 focus:ring-2 focus:ring-indigo-900 focus:border-indigo-900 text-gray-400 text-base outline-none text-base focus:text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                  <option value="nulo" className="text-black">Clique para selecionar</option>
-                  <option value="Implante" className="text-black">Implante</option>
-                  <option value="Carga imediata" className="text-black">Carga imediata</option>
-                  <option value="Bichectomia" className="text-black">Bichectomia</option>
-                  <option value="Prótese" className="text-black">Prótese</option>
-                </select>
+                <label className="leading-7 text-md text-white">Procedimento<span className="text-red-400">*</span></label><br/>
+                
+                <input type="radio" name="procedimento" value="Implante"/>
+                <label htmlFor="Implante className='ml-1'">Implante</label>
+
+                <input type="radio" name="procedimento" value="Carga imediata" className='ml-2'/>
+                <label htmlFor="Cargaimediata" className='ml-1'>Carga imediata</label>
+
+                <input type="radio" name="procedimento" value="Faceta" className='ml-2'/>
+                <label htmlFor="Faceta" className='ml-1'>Faceta</label>
+
+                <input type="radio" name="procedimento" value="Bichectomia" className='ml-2'/>
+                <label htmlFor="Bichectomia" className='ml-1'>Bichectomia</label>
+                
+                <input type="radio" name="procedimento" value="Clareamento" className='ml-2'/>
+                <label htmlFor="Clareamento" className='ml-1'>Clareamento</label>
+
+                <input type="radio" name="procedimento" value="Prótese" className='ml-2'/>
+                <label htmlFor="Protese" className='ml-1'>Prótese</label>
               </div>
             </div>
             <button type="submit" disabled={isSubmitting} className="w-1/2 inline-flex justify-center text-gray bg-indigo-900 border-0 my-2 py-2 focus:outline-none hover:bg-indigo-950 rounded transition-color duration-300">{isSubmitting ? 'Enviando...' : 'Quero agendar a avaliação'}</button>
